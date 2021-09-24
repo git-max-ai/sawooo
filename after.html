@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sawo Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- left side menu  -->
+        <div class="left-side-menu">
+          <div class="logo">
+            <a href="#">
+              <img src="https://dev.sawolabs.com/static/media/sawo_logo.653e13b8.png" alt="logo" />
+            </a>
+          </div>
+
+          <div class="sub-menu">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#section-two">
+              <li>About Us</li>
+            </a>
+            <a href="#section-third">
+              <li>Create</li>
+            </a>
+            <a href="#section-five">
+              <li>Why</li>
+            </a>
+          </div>
+        </div>
+
+        <!-- right side menu  -->
+        <div class="right-side-menu">
+          <div class="sub-menu">
+            <button>Successfully Logged In!</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <section class="main-hero-section">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwYIELEI2SblbgAcDC6kXmleJGZdwCqKLEg&usqp=CAU" alt="heropageImg" />
+         
+          <!-- left side code   -->
+          <div class="hero-left-side">
+            
+            <h1>Sawo-lab Authentication</h1>
+            <p>
+              Secure Authentication Without OTP or SAWO is the next thing in authentication, we wish to provide convenience both to developers and the users using the same platform by providing a one-tap authentication service that is secure, swift and sustainable.
+            </p>
+            <div class="button-group">
+                <a href="index.html">
+                <button style="background-color: black; color: yellow;">Login</button>
+              </a>
+              <a href="#">
+                <button style="background-color: black; color: yellow;">Join Discord</button>
+              </a>
+            </div>
+          </div>
+          
+          <!-- right side code   -->
+          <div class="hero-right-side">
+             </div>
+        </section>
+ 
+        <section class="common-section" id="section-two">
+          <!-- left side of section 2  -->
+          <div class="left-side">
+            <figure>
+              <img src="data:image/png;base64,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" alt="section2" />
+            </figure>
+          </div>
+    
+          <!-- right side of section 2  -->
+          <div class="right-side">
+            <h2>Trust Worthy</h2>
+            <p>
+              We are based on the pillars named TRUST as SAWO does not save any personal data of the user since it is end-to-end encrypted and is coupled with highly secure open standards working on Public Key Cryptography.
+            </p>
+            <div class="button-group">
+              <button class="common-button ">get started</button>
+              <button class="common-button-normal">how its work?</button>
+            </div>
+          </div>
+        </section>
+
+    <section class="section-third" id="section-third">
+      <h2>The Tools For Your Goals</h2>
+      <p>
+        SAWO SDK acts as a hidden layer between your user and your platform
+      </p>
+      <div class="section-third-task">
+        <div class="task-1">
+          <img src="images/sectionIcon1.png" alt="icon1" />
+          <h3>Security</h3>
+          <p>
+            Security is unlike any other standard as for us neither private data has to travel the internet nor any login credential has to be stored in a server thus removing software vulnerabilities possessed by standard processes.
+          </p>
+        </div>
+
+        <div class="task-2">
+          <img src="images/sectionIcon2.png" alt="icon1" />
+          <h3>Time Management</h3>
+          <p>
+            Our product is ready to be integrated by your team within 6 minutes and thus making sure you invest crucial hours to develop your product, our one-step process which takes 0.06 seconds.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="common-section" id="section-four">
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Create Your Own</h2>
+        <p>
+          Let's start with user registration, SAWO identifies the user on the initial registration process to help the client identify the data related to the user's identity and various other information.
+        </p>
+        <div class="button-group">
+          <button class="common-button">get started</button>
+          <button class="common-button-normal">how its work?</button>
+        </div>
+      </div>
+
+      <!-- left side of section 2  -->
+      <div class="left-side">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoC2UcY-9_SkargscCa780Gfr51r8oTaY1wA&usqp=CAU">
+      </div>
+    </section>
+
+
+    <section class="common-section" id="section-five">
+      <!-- left side of section 2  -->
+      <div class="left-side">
+        <img src="data:image/jpeg;base64,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" alt="section5" />
+      </div>
+
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Why SAWO</h2>
+
+        <div class="fitness-goals">
+          <div class="rule1">
+            <h3>
+              <i class="fas fa-heart"></i> Biometric Authentication
+            </h3>
+            <p>
+              SAWO is an authentication solution that can onboard users without any passwords or OTPs
+            </p>
+          </div>
+
+          <div class="rule2">
+            <h3>
+              <i class="fas fa-heart"></i> Data Autonomy
+            </h3>
+            <p>
+              With SAWO we give you the power to control which data you want to share
+            </p>
+          </div>
+
+          <div class="rule3">
+            <h3><i class="fas fa-heart"></i> User Convenience</h3>
+            <p>
+              Make your users forget about the hassles of passwords and enjoy your product and at the same time make it easier for them to check out products
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="logo-div">
+        <img src="https://dev.sawolabs.com/static/media/sawo_logo.653e13b8.png" alt="logo" />
+        <p>@2021 Sawo</p>
+      </div>
+
+      <div class="footer-menu">
+        <div class="footer-div-2">
+          <h4>Products</h4>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Search</li></a>
+        </div>
+
+        <div class="footer-div-3">
+          <h4>Abouts</h4>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>Auth</li></a>
+        </div>
+
+        <div class="footer-div-4">
+          <h4>Blogs</h4>
+          <a href="#"><li>pricing</li></a>
+          <a href="#"><li>pricing</li></a>
+        </div>
+
+        <div class="footer-div-5">
+          <h4>Get In Touch</h4>
+          <a href="#"><li>Questions Or Feedback?</li></a>
+          <a href="#"><li>We’ll love to help you</li></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------- our 7th section  social media start 
+        ---------------------------------------------------------------------- -->
+
+    <div class="icon-bar">
+      <a href="#" class="facebook">
+        click here to visit <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <a href="#" class="telegram">
+        click here to visit <i class="fab fa-telegram-plane"></i>
+      </a>
+
+      <a
+        href="#"
+        class="instagram"
+      >
+        click here to visit <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="#" class="linkedin" target="_thapa">
+        click here to visit <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="#"
+      >
+        click here to visit <i class="fab fa-youtube-square"></i>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    .images{
+        width: 500px;
+        height: 500px;
+        display: block;
+    }
+    .dis{
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+<body>
+    <div class="dis">
+    <div class=images>
+        <img src=".\Login Animation\Login Animation\Illustrations\Login Colour\login.svg">
+    </div>
+    <div class="container">
+        <h1 style=" padding-bottom: 30px;">To Know About Us</h1>
+        <h2>You Need To Login First !!!</h2>
+        <div id="sawo-container" style="height: 300px; width: 300px"></div>
+    </div>
+</div>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+        var config = {
+            // should be same as the id of the container created on 3rd step
+            containerID: 'sawo-container',
+            // can be one of 'email' or 'phone_number_sms'
+            identifierType: 'email',
+            // Add the API key copied from 2nd step
+            apiKey: '892dc3a0-60cc-4fb4-ae6d-36af0e1cb70d',
+            // Add a callback here to handle the payload sent by sdk
+            onSuccess: (payload) => {
+                window.location = './after.html'
+            },
+        }
+        var sawo = new Sawo(config)
+        sawo.showForm()
+    </script>
+</body>
+
+</html>
